@@ -53,3 +53,16 @@ A simple and interactive CLI tool to translate English text into any target lang
     LANGSMITH_TRACING=true
     LANGSMITH_ENDPOINT=https://api.smith.langchain.com
     ```
+
+
+## 🧠 Powered by
+
+- [LangChain](https://www.langchain.com/)
+- [OpenAI API](https://platform.openai.com/)
+- [LangSmith](https://smith.langchain.com/)
+
+---
+
+## 🛠️ License
+
+**MIT License © 2025 Rehmat Qadeer**
