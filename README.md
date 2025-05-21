@@ -27,14 +27,29 @@ A simple and interactive CLI tool to translate English text into any target lang
 
 1. **Clone the repository**
 
-```bash
-git clone https://github.com/your-username/llm-translator.git
-cd llm-translator ```
+    ```bash
+    git clone https://github.com/rehmat11872/LLM-Translator.git
+    cd LLM-Translator
+    ```
 
+2. **Create a virtual environment**
 
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use: venv\Scripts\activate
+    ```
 
-2 **Create a virtual environment**
+3. **Install dependencies**
 
-```bash
-python -m venv venv
-source venv/bin/activate ```
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Create a `.env` file** (optional for LangSmith)
+
+    ```env
+    OPENAI_API_KEY=your-openai-api-key
+    LANGSMITH_API_KEY=your-langsmith-api-key
+    LANGSMITH_TRACING=true
+    LANGSMITH_ENDPOINT=https://api.smith.langchain.com
+    ```
