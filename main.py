@@ -15,6 +15,16 @@ prompt_tpl = ChatPromptTemplate.from_messages(
     [("system", system_tpl), ("user", "{text}")]
 )
 
+# also we can do like this
+# from langchain_core.messages import HumanMessage, SystemMessage
+
+# messages = [
+#     SystemMessage("Translate the following from English into Italian"),
+#     HumanMessage("hi!"),
+# ]
+
+# model.invoke(messages)
+
 def translate(text: str, language: str = "Italian") -> str:
     """Return the LLM translation of text → language."""
     prompt = prompt_tpl.invoke({"language": language, "text": text})
